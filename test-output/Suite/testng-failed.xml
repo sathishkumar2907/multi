@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="platformVersion_" value="5.1"/>
+  <parameter name="URL_" value="127.0.0.1:5000/wd/hub"/>
+  <parameter name="UDID_" value="emulator-5556"/>
+  <parameter name="deviceName_" value="MOTO G"/>
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="platformVersion_" value="5.1"/>
+    <parameter name="URL_" value="127.0.0.1:5000/wd/hub"/>
+    <parameter name="UDID_" value="emulator-5556"/>
+    <parameter name="deviceName_" value="MOTO G"/>
+    <classes>
+      <class name="com.tvisha.multipleDevicepkg.MultiDeviceDemo">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="home_Page"/>
+          <include name="test_case4"/>
+          <include name="quite"/>
+          <include name="quite"/>
+          <include name="center_Add_Button"/>
+          <include name="log_out"/>
+        </methods>
+      </class> <!-- com.tvisha.multipleDevicepkg.MultiDeviceDemo -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="platformVersion_" value="5.1.1"/>
+    <parameter name="URL_" value="127.0.0.1:4723/wd/hub"/>
+    <parameter name="UDID_" value="emulator-5554"/>
+    <parameter name="deviceName_" value="SM-J200G"/>
+    <classes>
+      <class name="com.tvisha.multipleDevicepkg.MultiDeviceDemo">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="home_Page"/>
+          <include name="test_case4"/>
+          <include name="quite"/>
+          <include name="quite"/>
+          <include name="center_Add_Button"/>
+          <include name="log_out"/>
+        </methods>
+      </class> <!-- com.tvisha.multipleDevicepkg.MultiDeviceDemo -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

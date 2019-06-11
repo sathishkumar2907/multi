@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="tests" thread-count="2">
+  <test name="Test1">
+      <parameter name="deviceName_" value="SM-J200G"/>
+		<parameter name="UDID_" value="emulator-5554"/>
+		<parameter name="platformVersion_" value="5.1.1"/>
+		<parameter name="URL_" value="127.0.0.1:4723/wd/hub"/>
+      <classes>
+			<class name="com.tvisha.multipleDevicepkg.MultiDeviceDemo"/>
+			</classes>
+	   </test> 
+
+  <test name="Test2">
+	 <parameter name="deviceName_" value="MOTO G"/>
+		<parameter name="UDID_" value="emulator-5556"/>
+		<parameter name="platformVersion_" value="4.1.1"/>
+		<parameter name="URL_" value="127.0.0.1:5000/wd/hub"/>
+		<classes>
+			<class name="com.tvisha.multipleDevicepkg.MultiDeviceDemo"/>
+		</classes>
+   </test>
+	</suite> 
+	
